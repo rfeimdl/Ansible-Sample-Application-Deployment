@@ -33,7 +33,7 @@ export TOMCAT_USER=tomcat
 TOMCAT_USAGE="Usage: $0 {\e[00;32mstart\e[00m|\e[00;31mstop\e[00m|\e[00;32mstatus\e[00m|\e[00;31mrestart\e[00m}"
  
 #SHUTDOWN_WAIT is wait time in seconds for java proccess to stop
-SHUTDOWN_WAIT=20
+SHUTDOWN_WAIT=2000
  
 tomcat_pid() {
         echo `ps -fe | grep $CATALINA_BASE | grep -v grep | tr -s " "|cut -d" " -f2`
